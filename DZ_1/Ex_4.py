@@ -1,8 +1,13 @@
-print ("Введите координату точки А: ")
-a = map(int,input().split())
-a = int(a)
-print ("Введите координату точки B: ")
-b = map (int,input().split())
-b = int(b)
-result = sqrt(((b [1] - a [1])**2) + ((b[0] - a [0])**2))
-print (result)
+# 4. Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
+print ("Введите номер четверти: ")
+quarter = int(input())
+if quarter == 1:
+    print ("x > 0 and y > 0")
+if quarter == 2:
+    print ("x < 0 and y > 0")
+if quarter == 3:
+    print ("x < 0 and y < 0")
+if quarter == 4:
+    print ("x > 0 and y < 0")
+if  quarter < 0 or quarter > 4:
+    print ("Ошибка")
