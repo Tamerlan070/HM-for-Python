@@ -1,7 +1,3 @@
-from cmath import sqrt
-from lib2to3.pytree import convert
-
-
 print ("Введите координату точки А: ")
 a = map(int,input().split())
 a = int(a)
