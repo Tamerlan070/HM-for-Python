@@ -2,15 +2,17 @@
 # Без использования встроенной функции преобразования, без строк. Без использования встроенной функции преобразования, без строк.
 
 
-
-print ("Введите число в десятичной системе исчесления: ")
+print("Введите число в десятичное системе исчесления: ")
 number = int(input())
+i = 0
+binaryNumber = [] 
 
-# newNumber = 1
-lst = []
-# delta = 2
+while number > i:
+    binaryNumber[i] = number % 2 # записываем остаток от деления в массив 
+    number = int(number/2) # отделяем дробную часть от введенного пользователем числа 
+    i = i + 1 # инкремент 
 
-while number > 0:
-    lst.append(number%2)
-
-# print (newNumber)
+""" for k in range (i -1, -1, -1):
+    print(binaryNumber[k], end = " ")
+"""
+print (binaryNumber)
