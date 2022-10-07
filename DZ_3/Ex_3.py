@@ -6,4 +6,11 @@
 print ("Введите число в десятичной системе исчесления: ")
 number = int(input())
 
-s =co
+# newNumber = 1
+lst = []
+# delta = 2
+
+while number > 0:
+    lst.append(number%2)
+
+# print (newNumber)
